@@ -14,7 +14,12 @@
 		9A857A9A21221E4300795D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A857A9821221E4300795D31 /* LaunchScreen.storyboard */; };
 		9A857AA521221E4300795D31 /* UITestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A857AA421221E4300795D31 /* UITestingTests.swift */; };
 		9A857AB021221E4300795D31 /* UITestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A857AAF21221E4300795D31 /* UITestingUITests.swift */; };
-		9A857ABE21221EDD00795D31 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A857ABD21221EDD00795D31 /* ViewController2.swift */; };
+		9ABB9BAE21234F4B008EEB65 /* TableTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB9BAD21234F4B008EEB65 /* TableTestViewController.swift */; };
+		9ABB9BB12123514B008EEB65 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB9BAF2123514B008EEB65 /* CustomTableViewCell.swift */; };
+		9ABB9BB22123514B008EEB65 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABB9BB02123514B008EEB65 /* CustomTableViewCell.xib */; };
+		9ABB9BB6212358B5008EEB65 /* TestLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB9BB4212358B5008EEB65 /* TestLabelViewController.swift */; };
+		9ABB9BB7212358B5008EEB65 /* TestLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABB9BB5212358B5008EEB65 /* TestLabelViewController.xib */; };
+		9ABB9BB921235999008EEB65 /* TestUIElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB9BB821235999008EEB65 /* TestUIElementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,12 @@
 		9A857AAB21221E4300795D31 /* UITestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A857AAF21221E4300795D31 /* UITestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingUITests.swift; sourceTree = "<group>"; };
 		9A857AB121221E4300795D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A857ABD21221EDD00795D31 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		9ABB9BAD21234F4B008EEB65 /* TableTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTestViewController.swift; sourceTree = "<group>"; };
+		9ABB9BAF2123514B008EEB65 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9ABB9BB02123514B008EEB65 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		9ABB9BB4212358B5008EEB65 /* TestLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLabelViewController.swift; sourceTree = "<group>"; };
+		9ABB9BB5212358B5008EEB65 /* TestLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLabelViewController.xib; sourceTree = "<group>"; };
+		9ABB9BB821235999008EEB65 /* TestUIElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIElementsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,10 @@
 		9A857A8E21221E4300795D31 /* UITesting */ = {
 			isa = PBXGroup;
 			children = (
+				9ABB9BB321235152008EEB65 /* View Controllers */,
 				9A857A8F21221E4300795D31 /* AppDelegate.swift */,
-				9A857A9121221E4300795D31 /* ViewController.swift */,
-				9A857ABD21221EDD00795D31 /* ViewController2.swift */,
+				9ABB9BAF2123514B008EEB65 /* CustomTableViewCell.swift */,
+				9ABB9BB02123514B008EEB65 /* CustomTableViewCell.xib */,
 				9A857A9321221E4300795D31 /* Main.storyboard */,
 				9A857A9621221E4300795D31 /* Assets.xcassets */,
 				9A857A9821221E4300795D31 /* LaunchScreen.storyboard */,
@@ -126,6 +137,18 @@
 				9A857AB121221E4300795D31 /* Info.plist */,
 			);
 			path = UITestingUITests;
+			sourceTree = "<group>";
+		};
+		9ABB9BB321235152008EEB65 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A857A9121221E4300795D31 /* ViewController.swift */,
+				9ABB9BAD21234F4B008EEB65 /* TableTestViewController.swift */,
+				9ABB9BB4212358B5008EEB65 /* TestLabelViewController.swift */,
+				9ABB9BB5212358B5008EEB65 /* TestLabelViewController.xib */,
+				9ABB9BB821235999008EEB65 /* TestUIElementsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABB9BB7212358B5008EEB65 /* TestLabelViewController.xib in Resources */,
 				9A857A9A21221E4300795D31 /* LaunchScreen.storyboard in Resources */,
 				9A857A9721221E4300795D31 /* Assets.xcassets in Resources */,
+				9ABB9BB22123514B008EEB65 /* CustomTableViewCell.xib in Resources */,
 				9A857A9521221E4300795D31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A857A9221221E4300795D31 /* ViewController.swift in Sources */,
+				9ABB9BB6212358B5008EEB65 /* TestLabelViewController.swift in Sources */,
+				9ABB9BB12123514B008EEB65 /* CustomTableViewCell.swift in Sources */,
+				9ABB9BB921235999008EEB65 /* TestUIElementsViewController.swift in Sources */,
 				9A857A9021221E4300795D31 /* AppDelegate.swift in Sources */,
-				9A857ABE21221EDD00795D31 /* ViewController2.swift in Sources */,
+				9ABB9BAE21234F4B008EEB65 /* TableTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

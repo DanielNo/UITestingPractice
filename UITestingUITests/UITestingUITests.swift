@@ -29,8 +29,22 @@ class UITestingUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testTableView(){
+        // Find tabbaritem by title
+        let tabBarItem = app.tabBars.buttons["table-tab"]
+        XCTAssertNotNil(tabBarItem)
+        tabBarItem.tap()
+        
+    }
+    
     func testPresentViewController() {
-        let button = app.buttons["btnAccessibiityLabel"]
+        // Find tabbaritem by title
+        let tabBarItem = app.tabBars.buttons["nav-tab"]
+
+        XCTAssertNotNil(tabBarItem)
+        tabBarItem.tap()
+        
+        let button = app.buttons["btnAccessibiityIdentifier"]
         XCTAssertTrue(button.exists)
         button.tap()
         
@@ -44,7 +58,7 @@ class UITestingUITests: XCTestCase {
         print("label : " + vcLabel.label)
         XCTAssertTrue(vcLabel.label == "View Controller 2")
         customBtn.tap()
-        XCTAssertTrue(vcLabel.label == "changed text")
+        XCTAssertTrue(vcLabel.label == "text changed")
         
         
         
